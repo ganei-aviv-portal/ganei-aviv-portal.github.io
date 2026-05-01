@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/vaad-portal/', // שם ה-Repository שלך
+  base: '/', // האתר יושב כעת בשורש הדומיין של הארגון
 })
