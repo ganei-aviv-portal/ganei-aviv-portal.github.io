@@ -82,6 +82,34 @@
   font-weight: bold;
   flex-shrink: 0;
   box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+.step-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.step-image-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.step-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.step-card:hover .step-image {
+  transform: scale(1.1);
 }
 
 .step-content {
