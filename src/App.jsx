@@ -5,6 +5,10 @@ const translations = {
   he: {
     title: "פורטל ועדי בניינים - גני אביב",
     subtitle: "הדרך הפשוטה והמהירה לניהול עצמאי או החלפת חברת ניהול. כמה צעדים פשוטים ואתם שם - בלי סחבת ובלי סיבוכים מיותרים.",
+    waTitle: "קבוצת WhatsApp - ועדי בתים בגני אביב",
+    waText: "לשיתוף פעולה וסיוע הדדי בין ועדי הבניינים השונים בגני אביב. הצטרפו לקבוצה דרך הקישור או סרקו את קוד ה-QR.",
+    waBtn: "הצטרפות לקבוצה",
+    waScan: "סריקת QR להצטרפות",
     readMore: "קרא עוד מידע חשוב ↓",
     closeMore: "סגור מידע נוסף ↑",
     downloadTitle: "מסמכים וטפסים להורדה",
@@ -130,6 +134,10 @@ const translations = {
   ru: {
     title: "Портал домовых комитетов - Ганей Авив",
     subtitle: "Простой и быстрый способ перейти на самоуправление или сменить управляющую компанию. Несколько простых шагов и готово – без волокиты и лишних хлопот.",
+    waTitle: "Группа WhatsApp - домовые комитеты Ганей Авив",
+    waText: "Для сотрудничества и взаимопомощи между домовыми комитетами Ганей Авив. Присоединяйтесь по ссылке или отсканируйте QR-код.",
+    waBtn: "Присоединиться к группе",
+    waScan: "Сканируйте QR для входа",
     readMore: "Подробнее ↓",
     closeMore: "Свернуть ↑",
     downloadTitle: "Документы и бланки для скачивания",
@@ -285,6 +293,30 @@ function App() {
           Русский
         </button>
       </div>
+
+      <section className="whatsapp-banner">
+        <div className="whatsapp-banner-content">
+          <div className="whatsapp-banner-text">
+            <h3 className="whatsapp-banner-title">
+              <span className="whatsapp-icon" aria-hidden="true">💬</span>
+              {t.waTitle}
+            </h3>
+            <p className="whatsapp-banner-desc">{t.waText}</p>
+            <a
+              href="https://chat.whatsapp.com/IlpoFgwB9Dk940jur10wxC"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-btn"
+            >
+              {t.waBtn}
+            </a>
+          </div>
+          <div className="whatsapp-qr">
+            <img src="/whatsapp-qr.svg" alt={t.waScan} />
+            <span className="whatsapp-qr-caption">{t.waScan}</span>
+          </div>
+        </div>
+      </section>
 
       <header className="hero">
         <h1 className="title">{t.title}</h1>
